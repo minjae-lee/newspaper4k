@@ -214,7 +214,7 @@ class GoogleNewsSource(Source):
             decoded_url = new_decoderv1(url, interval=5)
             if not decoded_url.get("status"):
                 raise ValueError("Failed to decode the URL")
-            return decoded_url.get("url")
+            return decoded_url.get("url") or decoded_url.get("decoded_url")
 
         self.articles = []
         for res in self.gnews_results:
