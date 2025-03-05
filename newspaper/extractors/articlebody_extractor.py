@@ -182,7 +182,8 @@ class ArticleBodyExtractor:
                     "articlebody",
                     "article",
                     "story",
-                    "news read column"
+                    "news read column",
+                    "news body area",
                 ]:
                     items += parsers.get_tags(
                         doc,
