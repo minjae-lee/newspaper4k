@@ -187,7 +187,8 @@ class ArticleBodyExtractor:
                     "detail editor",
                     "viewconw",
                     "article text",
-                    "articletext",                    
+                    "articletext",
+                    "editor",
                 ]:
                     items += parsers.get_tags(
                         doc,
