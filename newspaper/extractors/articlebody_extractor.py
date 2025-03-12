@@ -189,6 +189,7 @@ class ArticleBodyExtractor:
                     "article text",
                     "articletext",
                     "editor",
+                    "viewwrap",
                 ]:
                     items += parsers.get_tags(
                         doc,
